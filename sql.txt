@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `chat` (
+  `chat_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(15) NOT NULL,
+  `message` varchar(140) NOT NULL,
+  `ip` varchar(18) NOT NULL,
+  `time` int(11) NOT NULL,
+  `delete` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`chat_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
