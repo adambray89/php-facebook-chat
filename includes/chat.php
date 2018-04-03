@@ -51,7 +51,7 @@
 			
 			if( $total_messages > 0 ) {
 				
-				$query_data['offset']	= ($total_messages - 50);
+				$query_data['offset'] = ($total_messages - 50) >= 0 ? ($total_messages - 50) : 0;
 				$query_data['limit']	= $total_messages;
 			
 				$this->_db->query('SELECT chat.chat_id
